@@ -9,7 +9,7 @@ const Logout = () => {
 
     useEffect(() => {
         if(localStorage.getItem("token") === null) {
-            navigate("/login");
+            navigate("/EcommerceApp/login");
             return;
         }
         const logout = async () => {
@@ -25,10 +25,10 @@ const Logout = () => {
                 if(response.status >= 200 && response.status <= 299) {
                     localStorage.removeItem("token");
                     eventBus.dispatch("logout", null);
-                    navigate('/');
+                    navigate('/EcommerceApp/');
                 }
                 else {
-                    navigate('/');
+                    navigate('/EcommerceApp/');
                 }
             }
 
@@ -39,25 +39,6 @@ const Logout = () => {
 
         logout();
     }, []);
-
-    const logout1 = async () => {
-        let response = await fetch("http://127.0.0.1:8000/api/logout", {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-                "Authorization" : "Bearer " + localStorage.getItem("token")
-            }
-        });
-        if(200 >= response.status <= 299) {
-            localStorage.removeItem("token");
-            eventBus.dispatch("logout", null);
-            navigate('/');
-        }
-        else {
-            navigate('/');
-        }
-    }
 
     return (
         <div className="d-flex justify-content-center align-items-center" >

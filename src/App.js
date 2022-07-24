@@ -13,21 +13,20 @@ import Contact from './component/Contact';
 import Checkout from './component/Checkout';
 
 function App() {
-  let r = "EcommerceApp/";
   return (
     <>
       <Navbar/>
       <Routes>
-        <Route path={r + "/"}element={<Home/>} />
-        <Route path={r + "/products"} element={<Products/>} />
-        <Route path={r + "/products/:id"} element={<Product/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Register/>} />
-        <Route path="/logout" element={<Logout/>} />
-        <Route path="/cart" element={<Cart/>} />
-        <Route path="/checkout" element={<Checkout/>} />
+        <Route path="/EcommerceApp/" element={<Home/>} />
+        <Route path="/EcommerceApp/products" element={<Products/>} />
+        <Route path="/EcommerceApp/products/:id" element={<Product/>} />
+        <Route path="/EcommerceApp/about" element={<About/>} />
+        <Route path="/EcommerceApp/contact" element={<Contact/>} />
+        <Route path="/EcommerceApp/login" element={<Login/>} />
+        <Route path="/EcommerceApp/register" element={<Register/>} />
+        <Route path="/EcommerceApp/logout" element={<Logout/>} />
+        <Route path="/EcommerceApp/cart" element={<Cart/>} />
+        <Route path="/EcommerceApp/checkout" element={<Checkout/>} />
       </Routes>
     </>
   );

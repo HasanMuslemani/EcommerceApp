@@ -28,12 +28,11 @@ const Register = () => {
         });
         console.log(response.status);
         if (response.status >= 200 && response.status <= 299) {
-            console.log("WTF: " + response.status);
             setError("");
             let userJson = await response.json();
             localStorage.setItem("token", userJson.token);
             eventBus.dispatch("login", null);
-            navigate('/');
+            navigate('/EcommerceApp/');
         }
         else if(response.status == 422) {
             setError("Email is already taken.");
