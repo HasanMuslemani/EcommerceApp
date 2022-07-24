@@ -15,7 +15,7 @@ const About = () => {
                             <p className="lead">The interests of our customers are always top priority for us, so we hope you will enjoy our products as much as we enjoy making them available to you.</p>
                         </div>
                         <div className="col-md-6">
-                            <img src="/assets/phones.jpg" className="img-fluid" alt="Phones" height="600px" width="600px" />
+                            <img src="./assets/phones.jpg" className="img-fluid" alt="Phones" height="600px" width="600px" />
                         </div>
                     </div>
                 </div>
