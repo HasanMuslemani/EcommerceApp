@@ -68,7 +68,7 @@ const Product = () => {
             },
             body: JSON.stringify(cartItemObject)
         });
-        navigate('/EcommerceApp/cart');
+        navigate('/cart');
     }
 
     return (

@@ -27,7 +27,7 @@ const Login = () => {
             let userJson = await response.json();
             localStorage.setItem("token", userJson.token);
             eventBus.dispatch("login", null);
-            navigate('/EcommerceApp/');
+            navigate('/');
         }
     }
 

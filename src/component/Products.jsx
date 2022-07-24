@@ -63,7 +63,7 @@ const Products = () => {
                                     <div class="card-body">
                                         <h5 class="card-title">{product.name.length >= 15 ? product.name.substring(0, 12) + "..." : product.name}</h5>
                                         <p class="card-text lead fw-bold">${product.price}</p>
-                                        <Link to={`/EcommerceApp/products/${product.id}`} class="btn btn-outline-dark">View</Link>
+                                        <Link to={`/products/${product.id}`} class="btn btn-outline-dark">View</Link>
                                     </div>
                                 </div>
                             </div>

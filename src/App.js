@@ -17,16 +17,16 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route path="/EcommerceApp/" element={<Home/>} />
-        <Route path="/EcommerceApp/products" element={<Products/>} />
-        <Route path="/EcommerceApp/products/:id" element={<Product/>} />
-        <Route path="/EcommerceApp/about" element={<About/>} />
-        <Route path="/EcommerceApp/contact" element={<Contact/>} />
-        <Route path="/EcommerceApp/login" element={<Login/>} />
-        <Route path="/EcommerceApp/register" element={<Register/>} />
-        <Route path="/EcommerceApp/logout" element={<Logout/>} />
-        <Route path="/EcommerceApp/cart" element={<Cart/>} />
-        <Route path="/EcommerceApp/checkout" element={<Checkout/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/products" element={<Products/>} />
+        <Route path="/products/:id" element={<Product/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/logout" element={<Logout/>} />
+        <Route path="/cart" element={<Cart/>} />
+        <Route path="/checkout" element={<Checkout/>} />
       </Routes>
     </>
   );

@@ -9,7 +9,7 @@ const Logout = () => {
 
     useEffect(() => {
         if(localStorage.getItem("token") === null) {
-            navigate("/EcommerceApp/login");
+            navigate("/login");
             return;
         }
         const logout = async () => {
@@ -25,10 +25,10 @@ const Logout = () => {
                 if(response.status >= 200 && response.status <= 299) {
                     localStorage.removeItem("token");
                     eventBus.dispatch("logout", null);
-                    navigate('/EcommerceApp/');
+                    navigate('/');
                 }
                 else {
-                    navigate('/EcommerceApp/');
+                    navigate('/');
                 }
             }
 

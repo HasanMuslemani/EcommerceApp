@@ -32,7 +32,7 @@ const Register = () => {
             let userJson = await response.json();
             localStorage.setItem("token", userJson.token);
             eventBus.dispatch("login", null);
-            navigate('/EcommerceApp/');
+            navigate('/');
         }
         else if(response.status == 422) {
             setError("Email is already taken.");

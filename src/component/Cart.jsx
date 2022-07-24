@@ -12,7 +12,7 @@ const Cart = () => {
 
     useEffect(() => {
         if (localStorage.getItem("token") === null) {
-            navigate("/EcommerceApp/login");
+            navigate("/login");
             return;
         }
         const getCartItems = async () => {
@@ -109,7 +109,7 @@ const Cart = () => {
                 {data.data.map(cartItems)}
                 <div className="d-flex justify-content-center">
                     <button className="btn btn-outline-primary mb-5 px-5" onClick={() => {
-                        navigate("/EcommerceApp/checkout", {state: data});
+                        navigate("/checkout", {state: data});
                     }}>Proceed to checkout</button>
                 </div>
             </>
