@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/EcommerceApp/static/css/main.7f30f631.css",
-    "main.js": "/EcommerceApp/static/js/main.16fc12d0.js",
-    "static/js/787.0c1a86ef.chunk.js": "/EcommerceApp/static/js/787.0c1a86ef.chunk.js",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/EcommerceApp/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/fontawesome-webfont.eot": "/EcommerceApp/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/EcommerceApp/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/EcommerceApp/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/EcommerceApp/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "index.html": "/EcommerceApp/index.html",
-    "main.7f30f631.css.map": "/EcommerceApp/static/css/main.7f30f631.css.map",
-    "main.16fc12d0.js.map": "/EcommerceApp/static/js/main.16fc12d0.js.map",
-    "787.0c1a86ef.chunk.js.map": "/EcommerceApp/static/js/787.0c1a86ef.chunk.js.map"
+    "main.css": "./static/css/main.c0272456.css",
+    "main.js": "./static/js/main.7c2c5ff1.js",
+    "static/js/787.0c1a86ef.chunk.js": "./static/js/787.0c1a86ef.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "./static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "./static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "./static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "./static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "./static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "./index.html",
+    "main.c0272456.css.map": "./static/css/main.c0272456.css.map",
+    "main.7c2c5ff1.js.map": "./static/js/main.7c2c5ff1.js.map",
+    "787.0c1a86ef.chunk.js.map": "./static/js/787.0c1a86ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f30f631.css",
-    "static/js/main.16fc12d0.js"
+    "static/css/main.c0272456.css",
+    "static/js/main.7c2c5ff1.js"
   ]
 }
