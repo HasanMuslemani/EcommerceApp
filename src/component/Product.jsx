@@ -12,7 +12,7 @@ const Product = () => {
     useEffect(() => {
         const getProduct = async () => {
             setLoading(true);
-            const response = await fetch(`http://127.0.0.1:8000/api/products/${id}`);
+            const response = await fetch(`https://muslemah.myweb.cs.uwindsor.ca/comp3340/ecommerce_api/public/api/products/${id}`);
             setData(await response.json());
             setLoading(false);
         }
@@ -59,7 +59,7 @@ const Product = () => {
     const addToCart = async () => {
         let cartItemObject = {product_id: data.data.id, quantity: 1};
         console.log(cartItemObject);
-        let response = await fetch("http://127.0.0.1:8000/api/cart/addItem", {
+        let response = await fetch("https://muslemah.myweb.cs.uwindsor.ca/comp3340/ecommerce_api/public/api/cart/addItem", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

@@ -13,7 +13,7 @@ const Logout = () => {
             return;
         }
         const logout = async () => {
-            let response = await fetch("http://127.0.0.1:8000/api/logout", {
+            let response = await fetch("https://muslemah.myweb.cs.uwindsor.ca/comp3340/ecommerce_api/public/api/logout", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

@@ -11,7 +11,7 @@ const Login = () => {
 
     async function login() {
         let userObject = {email, password};
-        let response = await fetch("http://127.0.0.1:8000/api/login", {
+        let response = await fetch("https://muslemah.myweb.cs.uwindsor.ca/comp3340/ecommerce_api/public/api/login", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

@@ -18,7 +18,7 @@ const Register = () => {
         else {
             let userObject = {first_name, last_name, email, password};
             console.log(userObject);
-            let response = await fetch("http://127.0.0.1:8000/api/register", {
+            let response = await fetch("https://muslemah.myweb.cs.uwindsor.ca/comp3340/ecommerce_api/public/api/register", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

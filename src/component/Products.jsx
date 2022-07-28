@@ -13,7 +13,7 @@ const Products = () => {
     useEffect(() => {
         const getProducts = async () => {
             setLoading(true);
-            const response = await fetch(`http://127.0.0.1:8000/api/products/category/${category}`);
+            const response = await fetch(`https://muslemah.myweb.cs.uwindsor.ca/comp3340/ecommerce_api/public/api/products/category/${category}`);
             if (componentMounted) {
                 setData(await response.json());
                 setLoading(false);
