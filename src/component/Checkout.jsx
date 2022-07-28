@@ -33,6 +33,7 @@ const Checkout = () => {
             <p>Tax: 13%</p>
             <p>Total: ${Math.round(getTotal() * 100) / 100}</p>
             <button disabled={orderClicked} className="btn btn-primary" onClick={() => {setOrderClicked(true)}}>Place order</button>
+            {orderClicked ? <p className="my-4">Order placed. Please print this page and take it to 1234 Fake Street Windsor, ON</p> : null}
         </div>
     );
 }
