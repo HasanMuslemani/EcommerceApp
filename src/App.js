@@ -11,6 +11,7 @@ import Register from './component/Register';
 import About from './component/About';
 import Contact from './component/Contact';
 import Checkout from './component/Checkout';
+import FAQ from './component/FAQ';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/logout" element={<Logout/>} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/checkout" element={<Checkout/>} />
+        <Route path="/support" element={<FAQ/>}></Route>
       </Routes>
     </>
   );

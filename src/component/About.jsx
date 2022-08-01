@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
 
-    
+
     return (
         <>
             <div>
@@ -19,7 +19,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
         </>
     );
 }

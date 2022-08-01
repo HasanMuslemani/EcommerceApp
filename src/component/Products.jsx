@@ -50,8 +50,9 @@ const Products = () => {
         return (
             <>
                 <div className="buttons d-flex flex-wrap justify-content-center mb-5 pb-5">
-                    <button className="btn btn-outline-dark me-2" onClick={() => {setCategory("all");}}>All</button>
-                    <button className="btn btn-outline-dark me-2" onClick={() => {setCategory("electronics");}}>Electronic</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => {setCategory("electronics");}}>Phones</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => {setCategory("games");}}>Games</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => {setCategory("other");}}>Other</button>
                 </div>
                 {data.data.map((product) => {
                     

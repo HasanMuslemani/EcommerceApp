@@ -70,7 +70,7 @@ const Cart = () => {
         newData.data = data.data.filter(item => cartItem.id != item.id);
         setData(newData);
 
-        await fetch(`http://127.0.0.1:8000/api/cartItem/${cartItem.id}`, {
+        await fetch(`https://muslemah.myweb.cs.uwindsor.ca/comp3340/ecommerce_api/public/api/cartItem/${cartItem.id}`, {
             method: 'DELETE',
             headers: {
                 "Accept": "application/json",
@@ -86,7 +86,7 @@ const Cart = () => {
         }
         increment ? cartItem.quantity++ : cartItem.quantity--;
         let cartItemObject = { product_id: cartItem.product.id, quantity: cartItem.quantity };
-        let response = await fetch(`http://127.0.0.1:8000/api/cartItem/${cartItem.id}`, {
+        let response = await fetch(`https://muslemah.myweb.cs.uwindsor.ca/comp3340/ecommerce_api/public/api/cartItem/${cartItem.id}`, {
             method: 'PUT',
             headers: {
                 "Content-Type": "application/json",
