@@ -22,14 +22,9 @@ const Logout = () => {
             }
         });
             if (componentMounted) {
-                if(response.status >= 200 && response.status <= 299) {
-                    localStorage.removeItem("token");
-                    eventBus.dispatch("logout", null);
-                    navigate('/');
-                }
-                else {
-                    navigate('/');
-                }
+                localStorage.removeItem("token");
+                eventBus.dispatch("logout", null);
+                navigate('/');
             }
 
             return () => {
